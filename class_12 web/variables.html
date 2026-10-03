@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    :root{
+    --primary:#540531;
+    --primary-dark:#06131d;
+    --text:rgb(63, 5, 88);
+    --spacing:10px;
+    --radius:8px;
+    --fonts:sans-serif;
+    }
+    body{
+        font-family:var(--fonts);
+        color:var(--text);
+        padding:var(--spacing);
+    }
+    button{
+        background-color: var(--primary);
+        color: rgb(240, 240, 234);
+        padding:var(--spacing);
+        border:none;
+        border-radius: var(--radius);
+        cursor: pointer;
+    }
+    button:hover{
+        background-color:var(--primary-dark) ;
+    }
+    .card{
+        border: 2px solid var(--primary);
+        border-radius: var(--radius);
+        padding:(var(--spacing));
+        margin-top: var(--spacing);
+    }
+</style>
+<body>
+    <button>Click Me</button>
+    <div class="card">
+        <h2>QUOTE OF THE DAY :D</h2>
+        <p> "Life must be understood backward. But it must be lived forward."
+— Søren Kierkegaard</p>
+            
+    </div>
+    
+</body>
+</html>
