@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            height: 500px;
+            width: 500px;
+            background-color: rgb(215, 153, 218);
+            animation-name:container-mover;
+            animation-duration: 5s;
+            animation-direction: alternate;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+            
+        }
+
+        .box {
+            height: 100px;
+            width: 100px;
+            background-color: rgb(67, 38, 29);
+            border:3px solid black;
+            /* link the animation */
+            animation-name: box-mover;
+            animation-duration: 5s;
+            /* animation-iteration-count: infinite; */
+        /* after each iteration which direction your animation should  */
+            animation-direction: alternate;
+            animation-iteration-count: infinite;
+            /* if animation iteration is not inifinte -> where you want your animation to end */
+            
+        /* speed of animation */
+            animation-timing-function: linear;
+
+        }
+         /* define the animation */
+        @keyframes box-mover {
+            33% {
+                transform: translateY(400px);
+            }
+            66% {
+                transform: translate(400px,400px);
+            }
+
+            50% {
+                
+                border-radius: 50%;
+            }
+            100% {
+                background-color: rgb(102, 15, 79);
+                transform:translate(400px,0px);
+            }
+       
+        }
+        @keyframes container-mover{
+            50%{
+                background-color: rgb(225, 192, 149);
+            }
+           100%{
+            transform: rotate(-360deg);
+           }
+
+        }
+        
+    </style>
+</head>
+
+<body>
+
+
+    <div class="container">
+        <div class="box"></div>
+    </div>
+
+
+</body>
+
+</html>
