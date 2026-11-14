@@ -1,0 +1,67 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+
+}
+body{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background: linear-gradient(135deg, rgb(11, 11, 12),rgb(49, 8, 49),rgb(14, 13, 13));
+}
+.profile-title{
+    color: rgb(156, 73, 145);
+}
+.profile-subtitle{
+    color: rgb(68, 116, 96);
+
+}
+.navbar{
+    color: rgb(94, 94, 49);
+}
+.nav-link{
+    color: rgb(74, 120, 161);
+}
+.navbar{
+                width:100%;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                background-color: rgba(255,255,255,0.1);
+                padding: 20px 50px;
+                position:20px 50px;
+                top:0;
+                z-index:5;
+                backdrop-filter: blur(10px);
+            }
+            .nav-head{
+                font-size: 28px;
+                font-weight: bold;
+            }
+            .nav-link{
+                color: rgb(35, 63, 54);
+                background-color: rgb(121, 127, 95);
+                color: rgb(74, 120, 161);
+                gap: 30px;
+                display: flex;
+                align-items: center;
+                gap:30px;
+            }
+            
+            .nav-link a {
+                color: rgb(1, 17, 12);
+                text-decoration: underline;
+                font-size: 20px;
+            }
+            .about-content{
+                color: rgb(31, 97, 97);
+            }
+            .sec-1{
+                display:flex;
+                align-items:center;
+                justify-content:space-between;
+                gap:80px;
+                min-height:100vh;
+                min-width:1200vh;
+                margin:0 auto;
+                padding: 120px 50px 60px;
+            }

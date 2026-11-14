@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+        
+    }
+    
+    .box {
+        height: 200px;
+        width: 200px;
+    }
+    .one {
+        background-color: rgb(78, 207, 207);
+    }
+
+    .two {
+        background-color: rgb(209, 86, 86);
+        transition-property: transform,background-color,border-radius;
+        transition-duration: 2s;
+        transition-delay: 300ms;
+        transition-timing-function: ease-out;
+    }
+
+    .three {
+        background-color: rgb(107, 235, 107);
+        transition-property: transform,background-color,border-radius;
+        transition-duration: 2s;
+        transition-delay: 300ms;
+        transition-timing-function: ease-out;
+    }
+    .parent{
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 2px solid rgb(81, 12, 83);
+        margin-left:5px ;
+        margin-right:5px ;
+    }
+    .one:hover{
+        transform: rotate(50deg);
+        background-color:rgb(209, 92, 209) ;
+        /*transform:scaleY(2);*/
+        /*transform:rotateX(50deg);*/
+
+    }
+    .two:hover{
+        transform: rotate(-50deg);
+        background-color: rgb(75, 125, 219);
+        transform:translateY(-200px);
+        border-radius:50%;
+        transition-duration:2s ;
+        transition-delay:300ms;
+    }
+    .three:hover{
+        background-color: rgb(228, 236, 120);
+        border-radius: 50%;
+        transform:translateX(-400px);
+        transition-duration: 2s;
+        transition-delay: 300ms;
+
+    } 
+    h2{
+        color: rgb(99, 68, 20);
+    }
+    
+
+
+
+</style>
+
+<body>
+    <h2>Transform</h2>
+    <div class="parent">
+<div class="box one"></div>
+<div class="box two"></div>
+<div class="box three"></div>
+    </div>
+    
+<body>
+    
+</body>
+</html>
