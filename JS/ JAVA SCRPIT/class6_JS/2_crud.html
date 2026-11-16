@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3 id="greetings">Original heading</h3>
+    <p>I'm an old para.plz :/</p>
+    <script>
+    let greetingElem = document.querySelector("#greetings");
+    greetingElem.textContent ="I have modified";
+    let playDiv=document.createElement("div");
+    playDiv.textContent="Play Play Play!";
+    let bodyElem=document.querySelector("body");
+    bodyElem.appendChild(playDiv);
+    let p =document.querySelector("p");
+    p.remove();
+    </script>
+</body>
+</html>
