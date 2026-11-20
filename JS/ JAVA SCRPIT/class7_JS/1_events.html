@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+   #btn-event-helper{
+    height: 100px;
+    width: 100px;
+    border: 2px solid rgb(126, 39, 117);
+   } 
+</style>
+<body>
+    <h2>Events</h2>
+    <!-- 
+    Mouse : click, hover, scroll, right click , left click, dbclick
+    Keyboard : keypress
+    Touch  : 
+    -->
+
+    <div id="btn-event-helper"></div>
+
+    <button id="btn-events">Change BG
+    </button>
+    <h2>Keyborad Events</h2>
+    <input type="text">
+    <p></p>
+
+    <script>
+// task
+        // -> btn -> hover : lightblue
+        // -> btn -> right click : lightred
+        // -> btn -> left click : lightcyan
+    let button = document.querySelector("#btn-events");
+    button.addEventListener("mouseenter",function(){
+        let div = document.querySelector("#btn-event-helper");
+        div.style.backgroundColor="lightblue";
+    });
+    button.addEventListener("mouseleave",function(){
+        let div= document.querySelector("#btn-event-helper");
+        div.style.backgroundColor="transparent";
+    });
+    button.addEventListener("click",function(){
+    let div=document.querySelector("#btn-event-helper");
+    div.style.backgroundColor="yellow";
+     });
+     button.addEventListener("contextmenu",function(e){
+        e.preventDefault();
+    let div=document.querySelector("#btn-event-helper");
+    div.style.backgroundColor="red";
+     })
+     
+
+     let input= document.querySelector("input")
+     let str="";
+     input.addEventListener("keydown", function (e) {
+            console.log("event object", e.key);
+            let p = document.querySelector("p");
+            str = str + e.key;
+            p.textContent = str;
+        })
+
+        input.addEventListener("input", function (e) {
+            console.log("event object", e.target.value);
+            let p = document.querySelector("p");
+            p.textContent = e.target.value;
+        })
+
+    </script>
+
+</body>
+</html>
